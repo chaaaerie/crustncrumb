@@ -1,13 +1,5 @@
 -- =====================================================================
 -- Crust & Crumb Bakeshop System - database script (fixed version)
--- Run this whole file in phpMyAdmin (Import) or the MySQL console.
--- Changes from the old script:
---   * products: added description + is_available
---   * orders: added pickup_date
---   * NEW tables: ingredients, production_batches
---   * indexes on commonly searched columns
---   * seed order totals corrected (order 2 = 230.00, order 5 = 280.00)
---   * typo fixed in customer email (rea.rodriguez)
 -- =====================================================================
 
 CREATE DATABASE IF NOT EXISTS bakeshop_db;
