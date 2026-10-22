@@ -10,8 +10,6 @@ const DB_NAME    = 'bakeshop_db';
 const DB_USER    = 'root';
 const DB_PASS    = '';
 const DB_CHARSET = 'utf8mb4';
-
-// Set to true while developing to see real error messages in API responses.
 const DEBUG = true;
 
 ini_set('display_errors', DEBUG ? '1' : '0');
