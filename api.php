@@ -1,24 +1,4 @@
 <?php
-/**
- * api.php — JSON API for the Crust & Crumb Bakeshop System.
- *
- * Usage:  api.php?action=<name>
- *   GET  data             -> products, orders, customers, ingredients, batches (scoped to role)
- *   POST login            -> { role, username, password }
- *   POST logout
- *   POST product_save     -> { id?, name, category, description, price, stock, available }  (admin)
- *   POST product_delete   -> { id }                                                           (admin)
- *   POST customer_save    -> { id?, first_name, last_name, email, phone }                    (admin/staff)
- *   POST customer_delete  -> { id }                                                           (admin/staff)
- *   POST order_create     -> { customer_id?, pickup_date?, items:[{product_id,quantity}] }
- *   POST order_advance    -> { id }          Pending -> Preparing                             (admin/staff)
- *   POST order_pay        -> { id, method, amount_tendered }
- *                            Preparing -> Completed + payments row                            (admin/staff)
- *   POST ingredient_save  -> { id?, name, unit, quantity }                                   (admin/staff)
- *   POST ingredient_delete-> { id }                                                           (admin/staff)
- *   POST batch_save       -> { id?, product_id, quantity, production_date, status }          (admin/staff)
- *   POST batch_delete     -> { id }                                                           (admin/staff)
- */
 
 require __DIR__ . '/config.php';
 date_default_timezone_set('Asia/Manila');
