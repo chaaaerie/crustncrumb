@@ -1,6 +1,5 @@
 <?php
-// fix_db.php — ONE-TIME upgrade. Uses the same connection as the app (config.php),
-// so it changes exactly the database the app reads. DELETE THIS FILE afterwards.
+
 require __DIR__ . '/config.php';
 header('Content-Type: text/plain; charset=utf-8');
 
